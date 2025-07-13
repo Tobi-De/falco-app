@@ -62,3 +62,11 @@ def initials(user: AbstractUser) -> str:
 @register.filter
 def class_name(instance: object) -> str:
     return instance.__class__.__name__
+
+
+@register.filter
+def call_get_display(obj, field_name):
+    method_name = f"get_{field_name}_display"
+    method = getattr(obj, method_name, None)
+    if callable(method):
+        return method()
