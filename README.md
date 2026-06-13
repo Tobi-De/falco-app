@@ -1,7 +1,7 @@
-# Falco
+# Falco (DEPRECATED)
 
 > [!IMPORTANT]
-> Work in progress, not ready, not released yet, currently this is the place to go https://github.com/falcopackages/falco-cli
+> **This package is deprecated.** All functionality has been merged into [falco-cli](https://github.com/falcopackages/falco-cli). Please use `falco-cli` instead.
 
 **An opinionated toolkit for a better Django developer experience**
 
